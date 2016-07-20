@@ -16,8 +16,8 @@ Rectangle
         id: tabImg
         anchors { horizontalCenter: parent.horizontalCenter;
                   top: parent.top; topMargin: 15 }
-        imageWidth: 32
-        imageHeight: 32
+        imageWidth: 27
+        imageHeight: 27
         imageColor: "#6C6C6C"
     }
     Text

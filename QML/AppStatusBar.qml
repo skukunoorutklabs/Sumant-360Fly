@@ -73,4 +73,13 @@ Rectangle
         tabIcon: "Images/icon_settings.svg"
         tabCaption: "SETTINGS"
     }
+
+    Rectangle
+    {
+        id: statusBarSeparator
+        width: statusBarRect.width
+        height: 1
+        color: "#AAAAAA"
+        anchors { bottom: statusBarRect.bottom; left: statusBarRect.left }
+    }
 }

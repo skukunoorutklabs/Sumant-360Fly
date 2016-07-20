@@ -22,17 +22,8 @@ ApplicationWindow
     {
         id: statusBar
         width: mainWindow.width
-        height: 77
+        height: 78
         anchors { top: parent.top; left: parent.left }
-    }
-
-    Rectangle
-    {
-        id: statusBarSeparator
-        width: mainWindow.width
-        height: 1
-        color: "#AAAAAA"
-        anchors { top: statusBar.bottom; left: statusBar.left }
     }
 
     menuBar: MenuBar
