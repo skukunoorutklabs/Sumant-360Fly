@@ -133,10 +133,10 @@ ApplicationWindow
                 text: "Feedback"
                 onTriggered: Qt.openUrlExternally("https://360fly.com/contact")
             }
-            MenuItem
+            /*MenuItem
             {
                 text: "Send Logs to Support"
-            }
+            }*/
             style: MenuStyle
             {
                 itemDelegate
