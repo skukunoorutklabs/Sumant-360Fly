@@ -1,4 +1,4 @@
-#include "../Includes/DesktopApplication.h"
+#include "DesktopApplication.h"
 #include <QFileDialog>
 
 #include <QDebug>
@@ -23,17 +23,15 @@ void DesktopApplication::Initialize(QObject *rootObject)
 
 void DesktopApplication::cameraTabClickedSlot()
 {
-    QString explorerPath = "C:/Windows/explorer.exe";
-
     QFileDialog fileDialog;
-    fileDialog.setDirectory(explorerPath);
     fileDialog.setFileMode(QFileDialog::Directory);
     fileDialog.setOption(QFileDialog::ShowDirsOnly, true);
 
     fileDialog.exec();
 
-    QUrl userSelectedPath = fileDialog.directoryUrl();
-    qDebug() << "User selected  " << userSelectedPath;
+    QDir userSelectedPath = fileDialog.directory();
+    qDebug() << "User selected  " << userSelectedPath.path();
+    listAllFiles(userSelectedPath.path());
     ffmpeg.concatVideo();
 }
 
@@ -41,4 +39,16 @@ void DesktopApplication::imageTabClickedSlot()
 {
     qDebug() << "Images button clicked";
 
+}
+
+void DesktopApplication::listAllFiles(QString path)
+{
+    QDir flydir(path);
+    flydir.setNameFilters(QStringList() << "*.jpg" << "*.png" << "*.mp4");
+    QStringList fileList = flydir.entryList();
+
+    foreach (QString tmp, fileList) {
+        qDebug() << tmp << "\n";
+
+    }
 }

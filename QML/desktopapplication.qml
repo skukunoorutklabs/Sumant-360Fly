@@ -35,29 +35,6 @@ ApplicationWindow
         anchors { top: statusBar.bottom; left: statusBar.left }
     }
 
-    /*Image
-    {
-        id: dubSource
-        smooth: true
-        source: "Images/icon_camera.svg"
-        anchors.centerIn: parent
-
-        MouseArea
-        {
-            anchors.fill: parent
-            hoverEnabled: true
-            onEntered: cLay.color = "white"
-            onExited: cLay.color = "#6c6c6c"
-        }
-    }
-    ColorOverlay
-    {
-        id: cLay
-        anchors.fill: dubSource
-        source: dubSource
-        color: "#6c6c6c"
-    }*/
-
     menuBar: MenuBar
     {
         id: menuBarRect

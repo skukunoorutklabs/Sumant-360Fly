@@ -1,4 +1,4 @@
-#include "../Includes/FFmpeg.h"
+#include "FFmpeg.h"
 #include <QDebug>
 
 FFmpeg::FFmpeg()

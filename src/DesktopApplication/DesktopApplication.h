@@ -2,7 +2,7 @@
 #define DESKTOPAPPLICATION_H
 
 #include <QObject>
-#include "../Includes/FFmpeg.h"
+#include "../FFmpeg/FFmpeg.h"
 
 class DesktopApplication : public QObject
 {
@@ -15,6 +15,8 @@ public:
 
 private:
     FFmpeg ffmpeg;
+
+    void listAllFiles(QString path);
 
 private slots:
     void cameraTabClickedSlot();

@@ -1,7 +1,7 @@
 #include <QApplication>
 #include <QQmlApplicationEngine>
 #include <QQuickView>
-#include "Includes/DesktopApplication.h"
+#include "src/DesktopApplication/DesktopApplication.h"
 
 int main(int argc, char *argv[])
 {
