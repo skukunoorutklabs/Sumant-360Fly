@@ -8,10 +8,7 @@ class DesktopApplication : public QObject
 {
     Q_OBJECT
 public:
-    DesktopApplication();
-
-public:
-    void Initialize(QObject *root);
+    explicit DesktopApplication(QObject *parent = 0);
 
 private:
     FFmpeg ffmpeg;

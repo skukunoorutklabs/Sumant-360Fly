@@ -3,12 +3,7 @@
 
 #include <QDebug>
 
-DesktopApplication::DesktopApplication()
-{
-    qDebug() << "desktopapp constructor";
-}
-
-void DesktopApplication::Initialize(QObject *rootObject)
+DesktopApplication::DesktopApplication(QObject *rootObject)
 {
     bool success = false;
 

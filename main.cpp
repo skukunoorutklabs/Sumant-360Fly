@@ -12,8 +12,7 @@ int main(int argc, char *argv[])
 
     QObject *rootObject = engine.rootObjects().first();
 
-    DesktopApplication desktopApp;
-    desktopApp.Initialize(rootObject);
+    DesktopApplication desktopApp(rootObject);
 
     return app.exec();
 }
