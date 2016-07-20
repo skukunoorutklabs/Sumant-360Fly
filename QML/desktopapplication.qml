@@ -26,6 +26,16 @@ ApplicationWindow
         anchors { top: parent.top; left: parent.left }
     }
 
+    AppsPathView
+    {
+        id: appsView
+        width: mainWindow.width
+        height: mainWindow.height
+        anchors { top: statusBar.bottom; left: statusBar.left }
+        color: "transparent"
+
+    }
+
     menuBar: MenuBar
     {
         id: menuBarRect

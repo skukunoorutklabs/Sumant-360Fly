@@ -1,9 +1,6 @@
 <RCC>
     <qresource prefix="/">
         <file>QML/TabSelector.qml</file>
-        <file>QML/Images/360fly.png</file>
-        <file>QML/Images/360flylogo.png</file>
-        <file>QML/Images/camera_trans.png</file>
         <file>QML/Images/icon_camera.svg</file>
         <file>QML/Images/icon_images.svg</file>
         <file>QML/Images/icon_logo.svg</file>
@@ -13,5 +10,6 @@
         <file>QML/desktopapplication.qml</file>
         <file>QML/AppStatusBar.qml</file>
         <file>QML/ImageColorOverlay.qml</file>
+        <file>QML/AppsPathView.qml</file>
     </qresource>
 </RCC>
