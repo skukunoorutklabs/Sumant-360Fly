@@ -21,6 +21,7 @@ void DesktopApplication::cameraTabClickedSlot()
     QFileDialog fileDialog;
     fileDialog.setFileMode(QFileDialog::Directory);
     fileDialog.setOption(QFileDialog::ShowDirsOnly, true);
+    fileDialog.saveState();
 
     fileDialog.exec();
 

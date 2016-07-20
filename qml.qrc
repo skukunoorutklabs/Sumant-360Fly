@@ -10,6 +10,7 @@
         <file>QML/desktopapplication.qml</file>
         <file>QML/AppStatusBar.qml</file>
         <file>QML/ImageColorOverlay.qml</file>
-        <file>QML/AppsPathView.qml</file>
+        <file>QML/Images/icon_background.svg</file>
+        <file>QML/AppsLayout.qml</file>
     </qresource>
 </RCC>

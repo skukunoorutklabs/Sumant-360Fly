@@ -26,7 +26,7 @@ ApplicationWindow
         anchors { top: parent.top; left: parent.left }
     }
 
-    AppsPathView
+    AppsLayout
     {
         id: appsView
         width: mainWindow.width
